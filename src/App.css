@@ -2,10 +2,10 @@
   text-align: center;
 }
 
-.App-logo {
+/* .App-logo {
   height: 40vmin;
   pointer-events: none;
-}
+} */
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -13,15 +13,30 @@
   }
 }
 
+.card-deck{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 1rem;
+  gap: 1rem;
+  width: 100%;
+}
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  min-height: 8vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: calc(30px + 2vmin);
+  padding: 20px; 
+  width: 100%;
+  background-color:   rgb(27, 26, 26);
   color: white;
+}
+.form-control {
+    padding: 10px;
+    margin: 20px;
+    border-radius: 12px;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
 
 .App-link {
@@ -35,4 +50,47 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+ 
+
+.card-body {
+  
+  border: none;
+  width: 260px;
+  min-height: 320px;
+  margin: 20px;
+  border-radius: 12px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.card-body:hover {
+  box-shadow: none;
+  border: 5px solid rgb(61, 60, 60);
+  transition: 0.7s;
+}
+
+.card-body img {
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  width: 260px;
+  height: 140px;
+}
+
+.content {
+  padding: 20px;
+}
+ 
+
+.country-detail {
+  display: block;
+  position: fixed;
+  z-index: 1;
+  padding:100px 30%;
+  /* left: 0;
+  top: 0; */
+  width: 50%;
+  height: 40%;
+  overflow: auto;
+  /* background-color: rgb(255, 255, 255); */
+  background-color: rgba(255, 255, 255, 0.7);
 }
