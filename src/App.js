@@ -36,7 +36,7 @@ function App() {
          onChange={(e)=>setCountriesFilter(e.target.value)}
          />
          <select
-          id = "select"
+          // id = "select"
           onChange={(e)=>setRegionsFilter(e.target.value)}
           className="form-control col-md-2 m-2"
           >

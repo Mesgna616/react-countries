@@ -20,10 +20,7 @@ const CardHolder = (props) => {
         {props.data.capital}
         <br/>
         <strong>Languages:</strong>
-        {Object.values(props.data.languages).map((language) => {
-                    return  <span>{language.name}</span>;
-
-                  })}
+      {props.data.languages.map(x => x.name).join(', ')}
           <br/>
       </div>
     </div>
