@@ -18,10 +18,15 @@ const CardHolder = (props) => {
         <br />
         <strong> Capital :</strong>
         {props.data.capital}
-       
-        <br />
+        <br/>
+        <strong>Languages:</strong>
+        {Object.values(props.data.languages).map((language) => {
+                    return  <span>{language.name}</span>;
+
+                  })}
+          <br/>
       </div>
     </div>
   );
 };
-export default CardHolder
+export default CardHolder;
